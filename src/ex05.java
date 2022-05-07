@@ -1,4 +1,4 @@
-public class ex5 {
+public class ex05 {
     public static void main(String[] args) {
         System.out.println(isEven(11));
     }

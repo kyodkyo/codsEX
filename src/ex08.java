@@ -1,4 +1,4 @@
-public class ex8 {
+public class ex08 {
     public static void main(String[] args) {
         System.out.println(miniCalculator(9, 3, '%'));
     }

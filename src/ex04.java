@@ -1,4 +1,4 @@
-public class ex4 {
+public class ex04 {
     public static void main(String[] args) {
         System.out.println(isGreaterThan(11, 10));
     }
