@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class ex16 {
     public static void main(String[] args) {
-        int[] output = new int[]{1, 2, 3, 4};
+        int[] output = getAllElements(new int[]{1, 2, 3, 4});
         System.out.println(Arrays.toString(output));
     }
 
