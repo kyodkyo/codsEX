@@ -15,11 +15,10 @@ public class ex24 {
 
         for(int i=0; i<str.length(); i++){
             char key = str.charAt(i);
-            int count = 1;
             if(result.containsKey(key)){
                 result.put(key, result.get(key) + 1);
             } else{
-                result.put(key, count);
+                result.put(key, 1);
             }
         }
 

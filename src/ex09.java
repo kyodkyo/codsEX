@@ -21,6 +21,8 @@ public class ex09 {
         }
 
         ArrayList<Integer> newArr = new ArrayList<>(arrayList);
+
+        newArr.remove(arrayList.size()-1);
         return newArr;
     }
 }

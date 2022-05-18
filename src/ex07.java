@@ -17,6 +17,7 @@ public class ex07 {
             return null;
         }
 
-        return arrayList.remove(0);
+        Integer result = arrayList.remove(0); //int 타입으로 변수를 선언해도 자동 형변환이 되지만, 좋은 방법은 아님!
+        return result;
     }
 }

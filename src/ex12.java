@@ -14,11 +14,11 @@ public class ex12 {
     }
 
     public static int sumElements(ArrayList<Integer> arrayList){
-        int sum = 0;
+        Integer sum = 0;
 
         Iterator<Integer> iterator = arrayList.iterator();
         while(iterator.hasNext()){
-            int element = iterator.next();
+            Integer element = iterator.next();
             sum += element;
         }
 
