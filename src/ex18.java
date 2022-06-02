@@ -16,8 +16,7 @@ public class ex18 {
             }
         }
         return rArr;
-
-
-
     }
 }
+
+
