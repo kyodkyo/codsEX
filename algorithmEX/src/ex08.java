@@ -18,8 +18,11 @@ public class ex08 {
         ArrayList<Integer[]> result = new ArrayList<>();
         
         for(int i=1; i<=sqrt; i++){
-            if(gcf%i == 0) result.add(new Integer[]{i, M/i, N/i});
-            if(i*i < gcf) result.add(new Integer[]{gcf/i, M/(gcf/i), N/(gcf/i)});
+            if(gcf%i == 0) {
+                result.add(new Integer[]{i, M/i, N/i});
+                if(i*i < gcf)
+                    result.add(new Integer[]{gcf/i, M/(gcf/i), N/(gcf/i)});
+            }
         }
 
         Collections.sort(result, new Comparator<Integer[]>() {
@@ -36,6 +39,4 @@ public class ex08 {
         if(M%N==0) return N;
         return divisor(N, M%N);
     }
-
-
 }
