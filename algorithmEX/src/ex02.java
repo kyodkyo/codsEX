@@ -7,28 +7,7 @@ public class ex02 {
         System.out.println(output2); // --> 18
     }
 
-    public static int coinCount(int money) {
-        int count = money/500;
-        money %= 500;
-
-        count += money/100;
-        money %= 100;
-
-        count += money/50;
-        money %= 50;
-
-        count += money/10;
-        money %= 10;
-
-        count += money/5;
-        money %= 5;
-
-        count += money;
-
-        return count;
-    }
-
-    public static int coinCount2(int money){
+    public static int coinCount(int money){
         int count = 0;
 
         int[] wallet = new int[]{500, 100, 50, 10, 5, 1};
@@ -40,7 +19,6 @@ public class ex02 {
                 money -= (wallet[i]*sum);
             }
         }
-
         return count;
     }
 }

@@ -35,18 +35,15 @@ public class ex03 {
         for(int i=0; i<op.length(); i++){
             switch (op.charAt(i)){
                 case 'U' : 
-                    x -= 1;
-                    break;
+                    x -= 1; break;
                 case 'R' :
-                    y += 1;
-                    break;
+                    y += 1; break;
                 case 'D' :
-                    x += 1;
-                    break;
+                    x += 1; break;
                 case 'L' :
-                    y -= 1;
+                    y -= 1; break;
+                default:
                     break;
-                default: break;
             }
 
             if(x>=0 && y>=0){

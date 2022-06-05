@@ -2,9 +2,6 @@ import java.util.Arrays;
 
 public class ex01 {
     public static void main(String[] args) {
-        int boxs = countBox(new int[]{60, 73, 80, 87, 103, 109, 119, 123, 128, 129, 136, 146, 153, 168, 182}, 200);
-        System.out.println(boxs);  // 11
-
         int output = countBox(new int[]{70, 50, 80, 50}, 100);
         System.out.println(output); // 3
 
