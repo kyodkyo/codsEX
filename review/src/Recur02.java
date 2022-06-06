@@ -1,4 +1,4 @@
-public class Num02 {
+public class Recur02 {
     public static void main(String[] args) {
         boolean output = checkOdd(17);
         System.out.println(output);

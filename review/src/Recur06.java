@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Num06 {
+public class Recur06 {
     public static void main(String[] args) {
         int output = multipleOfArray(new int[]{-1, 4, 2, -7});
         System.out.println(output);

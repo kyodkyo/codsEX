@@ -1,4 +1,4 @@
-public class Num03 {
+public class Recur03 {
     public static void main(String[] args) {
         int output = factorial(10);
         System.out.println(output);

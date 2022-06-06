@@ -1,4 +1,4 @@
-public class Num01 {
+public class Recur01 {
     public static void main(String[] args) {
         int output = sumN(10);
         System.out.println(output);

@@ -1,4 +1,4 @@
-public class Num04 {
+public class Recur04 {
     public static void main(String[] args) {
         int output = fibonacci(10);
         System.out.println(output);
