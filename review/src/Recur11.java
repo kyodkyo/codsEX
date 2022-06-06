@@ -1,20 +1,20 @@
 import java.util.Arrays;
 
-public class Recur10 {
+public class Recur11 {
     public static void main(String[] args) {
-        boolean output = checkLogic(new boolean[]{true, true, false});
+        boolean output = checkLogic2(new boolean[]{true, true, false});
         System.out.println(output);
     }
 
-    public static boolean checkLogic(boolean[] arr){
+    public static boolean checkLogic2(boolean[] arr){
         if(arr.length==0){
-            return true;
+            return false;
         }
 
         boolean head = arr[0];
         boolean[] tail = Arrays.copyOfRange(arr, 1, arr.length);
 
-        if(head && checkLogic(tail)){
+        if(head || checkLogic2(tail)) {
             return true;
         }
 
