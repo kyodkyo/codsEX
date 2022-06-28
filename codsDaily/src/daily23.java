@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class daily23 {
     public static void main(String[] args) {
         int output = fibonacci(0);
@@ -13,13 +15,17 @@ public class daily23 {
         System.out.println(output); // --> 34
     }
 
-    private static int fibonacci(int num) {
-        int result = num;
-
-        if(num<2){
-            return num;
+    public static int fibo(ArrayList<Integer> list, int num){
+        if(list.size()<=num){
+            list.add(fibo(list, num-1) + fibo(list, num-2));
         }
+        return list.get(num);
+    }
+    public static int fibonacci(int num) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(0);
+        list.add(1);
 
-return 1;
+        return fibo(list, num);
     }
 }
