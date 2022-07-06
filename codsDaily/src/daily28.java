@@ -13,7 +13,6 @@ public class daily28 {
     }
 
     public static boolean balancedBrackets(String str) {
-        // TODO:
         if(str.length()==0){
             return true;
         }
