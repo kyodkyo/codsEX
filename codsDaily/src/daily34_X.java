@@ -1,5 +1,6 @@
 public class daily34_X {
     public static void main(String[] args) {
+
         int[][] matrix = new int[][]{
                 {1, 2, 3, 4},
                 {5, 6, 7, 8},
@@ -15,6 +16,7 @@ public class daily34_X {
         System.out.println(rotatedMatrix[0][0]); // --> 13
         System.out.println(rotatedMatrix[3][2]); // --> 8
     }
+
 
     public static int[][] rotateMatrix(int[][] matrix, int K) {
         if(matrix == null || matrix.length == 0) return matrix;
